@@ -25,6 +25,7 @@ public class LoginTest {
 		driver.findElement(By.id("identifierNext")).click();
 		Thread.sleep(2000);
 		driver.findElement(By.name("password")).sendKeys("sfafgasd");
+		driver.findElement(By.xpath("//*[@id='passwordNext']/div/button")).click();
 	}
 	
 	@AfterSuite
